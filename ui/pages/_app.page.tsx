@@ -1,8 +1,17 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-
+import { useEffect, useState } from "react";
 import './reactCOIServiceWorker';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import ZkappWorkerClient from './zkappWorkerClient';
+
+import {
+  PublicKey,
+  PrivateKey,
+  Field,
+} from 'snarkyjs'
+
+let transactionFee = 0.1;
+
+export default function App() {
+  return <div></div>;
 }
